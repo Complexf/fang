@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>创建盘点单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/创建盘点单/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/创建盘点单/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u9927" class="ax_default box_11">
+        <div id="u9927_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9928" class="ax_default" data-left="49" data-top="74" data-width="263" data-height="30">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9929" class="ax_default box_1">
+          <div id="u9929_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u9930" class="ax_default text_field">
+          <input id="u9930_input" type="text" value=""/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9931" class="ax_default _文本段落2">
+          <div id="u9931_div" class=""></div>
+          <div id="u9931_text" class="text ">
+            <p><span style="color:#FF0000;">*</span><span style="color:#000000;">仓库名称</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9932" class="ax_default" data-left="77" data-top="151" data-width="352" data-height="30">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9933" class="ax_default box_1">
+          <div id="u9933_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u9934" class="ax_default text_field">
+          <input id="u9934_input" type="text" value=""/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9935" class="ax_default _文本段落2">
+          <div id="u9935_div" class=""></div>
+          <div id="u9935_text" class="text ">
+            <p><span>备注</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u9936" class="ax_default box_21">
+        <div id="u9936_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u9937" class="ax_default _图片_">
+        <img id="u9937_img" class="img " src="images/资产列表/u3565.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u9938" class="ax_default _三级标题">
+        <div id="u9938_div" class=""></div>
+        <div id="u9938_text" class="text ">
+          <p><span>创建盘点单</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u9939" class="ax_default _文本段落">
+        <div id="u9939_div" class=""></div>
+        <div id="u9939_text" class="text ">
+          <p><span>规则：</span></p><p><span>1、仓库名称：必填项，下拉选择，支持多选</span></p><p><span>2、资产类别：可以为空，为空表示全部类别；下拉选择，支持多选</span></p><p><span>3、</span><span style="color:#000000;">盘点员：当前企业下，分配当前系统权限的用户，下拉选择</span><span>，支持多选</span></p><p><span>4、盘点范围：下拉选择“在库、在库+被占用”</span></p><p><span>（1）在库：表示 资产商品表资产状态为“在库”的资产</span></p><p><span>（2）在库+被占用：表示 资产商品表资产状态为“在库”的资产，加上，所有单据，未审批和审批中的 资产</span></p><p><span><br></span></p><p><span>5、创建：点击【创建】按钮</span></p><p><span>（1）判断必填项</span></p><p><span>（2）创建盘点单号，</span><span style="color:#000000;">单号生成规则：字母（P）+年月日+4位数字（自动增长+1）；例如：P201905020002</span></p><p><span>（3）根据订单规则自动生成单号，创建主表和明细表</span></p><p><span>（4）创建盘点单二维码，二维码存储传递：“企业ID，盘点单ID，盘点单号，员工ID”</span></p><p><span>（5）根据选择的“盘点员”，推送钉钉工作通知</span></p><p><span><br></span></p><p><span><br></span></p><p><span>6、取消：点击【取消】按钮，提示“确定要取消操作！”是/否，选择是，关闭当前弹框，选择否则停留当前弹框</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- 指示器 (图片) -->
+      <div id="u9940" class="ax_default image2" data-label="指示器">
+        <img id="u9940_img" class="img " src="images/资产列表/指示器_u3504.png"/>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9941" class="ax_default" data-left="329" data-top="72" data-width="259" data-height="30">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9942" class="ax_default box_1">
+          <div id="u9942_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u9943" class="ax_default text_field">
+          <input id="u9943_input" type="text" value=""/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9944" class="ax_default _文本段落2">
+          <div id="u9944_div" class=""></div>
+          <div id="u9944_text" class="text ">
+            <p><span>资产类别</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 指示器 (图片) -->
+      <div id="u9945" class="ax_default image2" data-label="指示器">
+        <img id="u9945_img" class="img " src="images/资产列表/指示器_u3504.png"/>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9946" class="ax_default" data-left="59" data-top="110" data-width="253" data-height="30">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9947" class="ax_default box_1">
+          <div id="u9947_div" class=""></div>
+        </div>
+
+        <!-- Unnamed (文本框) -->
+        <div id="u9948" class="ax_default text_field">
+          <input id="u9948_input" type="text" value=""/>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9949" class="ax_default _文本段落2">
+          <div id="u9949_div" class=""></div>
+          <div id="u9949_text" class="text ">
+            <p><span style="color:#FF0000;">*</span><span style="color:#000000;">盘点员</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9950" class="ax_default" data-left="330" data-top="115" data-width="53" data-height="19">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9951" class="ax_default _文本段落2">
+          <div id="u9951_div" class=""></div>
+          <div id="u9951_text" class="text ">
+            <p><span>盘点范围</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (下拉列表框) -->
+      <div id="u9952" class="ax_default droplist">
+        <select id="u9952_input">
+          <option value="在库">在库</option>
+          <option value="在库+占用">在库+占用</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u9953" class="ax_default" data-left="388" data-top="214" data-width="142" data-height="30">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9954" class="ax_default primary_button">
+          <div id="u9954_div" class=""></div>
+          <div id="u9954_text" class="text ">
+            <p><span>创建</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u9955" class="ax_default button">
+          <div id="u9955_div" class=""></div>
+          <div id="u9955_text" class="text ">
+            <p><span>取消</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u9956" class="ax_default _文本段落">
+        <div id="u9956_div" class=""></div>
+        <div id="u9956_text" class="text ">
+          <p style="font-size:13px;"><span>盘点通知</span></p><p style="font-size:12px;"><span style="color:#666666;">您被邀请参与盘点单号P201905020002的盘点工作，点击消息打开盘点扫描窗口</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u9957" class="compound ax_default line" WidgetHeight="1" WidgetWidth="437" CompoundMode="true">
+        <img id="u9957_img" class="singleImg img " src="images/创建盘点单/u9957.png"/>
+        <div id="u9957p000" class="ax_vector_shape" WidgetTopLeftX="-0.495475113122172" WidgetTopLeftY="0" WidgetTopRightX="0.493212669683258" WidgetTopRightY="0" WidgetBottomLeftX="-0.495475113122172" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.493212669683258" WidgetBottomRightY="0.166666666666667">
+          <img id="u9957p000_img" class="img " src="images/创建盘点单/u9957p000.png"/>
+        </div>
+        <div id="u9957p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="109.25" WidgetTopRightY="-0.25" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="109.25" WidgetBottomRightY="0">
+          <img id="u9957p001_img" class="img " src="images/创建盘点单/u9957p001.png"/>
+        </div>
+        <div id="u9957p002" class="ax_vector_shape" WidgetTopLeftX="19.6818181818182" WidgetTopLeftY="0.05" WidgetTopRightX="-0.181818181818182" WidgetTopRightY="0.05" WidgetBottomLeftX="19.6818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0">
+          <img id="u9957p002_img" class="img " src="images/创建盘点单/u9957p002.png"/>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

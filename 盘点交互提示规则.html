@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>盘点交互提示规则</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/盘点交互提示规则/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/盘点交互提示规则/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10131" class="ax_default _文本段落">
+        <div id="u10131_div" class=""></div>
+        <div id="u10131_text" class="text ">
+          <p><span>资产商品状态：</span><span style="color:#FF0000;">在库，领用中，</span><span style="color:#FF0000;">领用</span><span style="color:#FF0000;">审批，退还审批，借用中，借用审批，退库审批，维修审批，维修中，调拨审批，异常</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10132" class="ax_default _文本段落">
+        <div id="u10132_div" class=""></div>
+        <div id="u10132_text" class="text ">
+          <p><span>盘点范围：</span></p><p><span>（1）在库：对应资产商品状态：</span><span style="color:#FF0000;">在库，领用中，借用中</span></p><p><span>（2）在库+被占用：对应资产商品状态：</span><span style="color:#FF0000;">领用</span><span style="color:#FF0000;">审批，退还审批，借用审批，退库审批，维修审批，维修中，调拨审批</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u10133" class="ax_default _文本段落">
+        <div id="u10133_div" class=""></div>
+        <div id="u10133_text" class="text ">
+          <p><span>盘点操作判断：</span></p><p><span><br></span></p><p><span>1、条码手动输入，条码枪扫描功能，手机二维码扫描；</span></p><p><span>2、输入资产编码，按下【登记】，或者手机扫描一维码或 二维码 ，获取资产信息判断:</span></p><p><span>（1）资产编码是否系统是否存在，不存在提醒：“条码不存在，请检查！&quot;</span></p><p><span>（2）系统存在则判断，资产编码状态是否在库， 不在库则提醒 “条码不在当前库存，是否加入盘点？”</span></p><p><span>&nbsp;&nbsp; &nbsp; 是：将资产信息加入盘点明细，无此条码的,也要插入一列 显示编码，其他字段空白数据</span></p><p><span>&nbsp;&nbsp; &nbsp; 否：不将条码号加入盘点信息 清空录入资产编码框</span></p><p><span><br></span></p><p><span>（3）如果资产编码存在，状态不再看则提醒“编码****是**状态，不在库，是否要加入盘点？”</span></p><p><span>&nbsp;&nbsp; &nbsp; 是：将资产信息加入盘点明细，记录当前资产状态</span></p><p><span>&nbsp;&nbsp; &nbsp; 否：不将条码号加入盘点信息 清空录入资产编码框</span></p><p><span>（4） 如果满足ABC则判断条码的 商品类别，品名：如果不满足条件则提醒：“条码不满足盘点范围，是否加入盘点？””</span></p><p><span>&nbsp;&nbsp; &nbsp; 是：将资产信息加入盘点明细，记录当前资产状态</span></p><p><span>&nbsp;&nbsp; &nbsp; 否：不将条码号加入盘点信息 清空录入资产编码框</span></p><p><span>（5）条码列表如果存在，重复盘点提醒：“条码已存在盘点列表，是否重复盘点？”</span></p><p><span>&nbsp;&nbsp; &nbsp; 是：将资产信息加入盘点明细，资产编码盘点数量增加1</span></p><p><span>&nbsp;&nbsp; &nbsp; 否：不将条码号加入盘点信息 清空录入资产编码框</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
